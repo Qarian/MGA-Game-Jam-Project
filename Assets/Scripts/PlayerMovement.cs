@@ -9,6 +9,8 @@ public class PlayerMovement : MonoBehaviour
 	public float maxSpeed;
 	public float acceleration;
 	public float jumpForce;
+	[SerializeField]
+	float deathJumpSpeed;
 
 	[Space]
 	public KeyCode left = KeyCode.A;
@@ -48,5 +50,13 @@ public class PlayerMovement : MonoBehaviour
 	{
 		if (currentSpeed != 0)
 			rb.velocity = new Vector2(currentSpeed, rb.velocity.y);
+	}
+
+	public void Death()
+	{
+		Collider2D[] colliders = new Collider2D[1];
+		rb.GetAttachedColliders(colliders);
+		colliders[0].enabled = false;
+		rb.velocity = new Vector2(0, deathJumpSpeed);
 	}
 }
