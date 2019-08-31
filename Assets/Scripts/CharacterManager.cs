@@ -71,8 +71,16 @@ public class CharacterManager : MonoBehaviour
                 legs.GetComponent<RawImage>().texture = skins.legs[skins.legsID].texture;
             }
         }
-        Debug.Log("BodyID: " + skins.legsID);
+        Debug.Log("LegsID: " + skins.legsID);
     }
+
+    public void ChangeSkinColor(bool isRight)
+    {
+        
+        
+        
+    }
+    
     
 }
 
