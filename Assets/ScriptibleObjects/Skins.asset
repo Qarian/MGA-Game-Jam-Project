@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Skins
   m_EditorClassIdentifier: 
   head:
-  - {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
-  - {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 9f0412ab9679e0142ab0f32818f50410, type: 2}
+  - {fileID: 2100000, guid: ee5519e6a394c444282afbede3c3f3dc, type: 2}
   body:
   - {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
   - {fileID: 10911, guid: 0000000000000000f000000000000000, type: 0}
@@ -23,6 +23,6 @@ MonoBehaviour:
   - {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
   - {fileID: 10911, guid: 0000000000000000f000000000000000, type: 0}
   - {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
-  headID: 1
+  headID: 0
   bodyID: 0
   legsID: 0
