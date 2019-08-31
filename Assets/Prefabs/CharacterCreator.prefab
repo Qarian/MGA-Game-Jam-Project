@@ -36,7 +36,7 @@ RectTransform:
   - {fileID: 6855785818895142325}
   - {fileID: 1382320804479231317}
   - {fileID: 8716785115160669462}
-  m_Father: {fileID: 4665995300326470178}
+  m_Father: {fileID: 7400793074540590450}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -459,7 +459,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 4665995300326470178}
+  m_Father: {fileID: 7400793074540590450}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &4201657821616421594
@@ -504,7 +504,7 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4665995300326470178}
+  - component: {fileID: 7400793074540590450}
   - component: {fileID: 5686009415906732611}
   m_Layer: 0
   m_Name: CharacterCreator
@@ -513,8 +513,8 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4665995300326470178
-Transform:
+--- !u!224 &7400793074540590450
+RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -529,6 +529,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &5686009415906732611
 MonoBehaviour:
   m_ObjectHideFlags: 0
