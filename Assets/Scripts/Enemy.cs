@@ -16,12 +16,11 @@ public class Enemy : MonoBehaviour
 
 	Transform currentChecktransform;
 
-	Rigidbody2D rb;
+	[SerializeField]
+	Rigidbody2D rb = default;
 
 	void Start()
 	{
-		rb = GetComponent<Rigidbody2D>();
-
 		currentChecktransform = checkTransforms[(int)movementDir];
 		if (movementDir == Direction.Right)
 			rb.velocity = new Vector2(speed, rb.velocity.y);
@@ -54,6 +53,6 @@ public class Enemy : MonoBehaviour
 	private void OnTriggerEnter2D(Collider2D collision)
 	{
 		if (collision.tag == "Player")
-			Destroy(gameObject);
+			Destroy(transform.parent.gameObject);
 	}
 }
