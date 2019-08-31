@@ -4,13 +4,15 @@ public class PlayerMovement : MonoBehaviour
 {
 	[SerializeField]
 	Transform groundCheckTransform = default;
+	[SerializeField]
+	GameObject gameOverCanvas = default;
 
 	[Space]
 	public float maxSpeed;
 	public float acceleration;
 	public float jumpForce;
 	[SerializeField]
-	float deathJumpSpeed;
+	float deathJumpSpeed = default;
 
 	[Space]
 	public KeyCode left = KeyCode.A;
@@ -58,5 +60,7 @@ public class PlayerMovement : MonoBehaviour
 		rb.GetAttachedColliders(colliders);
 		colliders[0].enabled = false;
 		rb.velocity = new Vector2(0, deathJumpSpeed);
+		Instantiate(gameOverCanvas);
+		Destroy(this);
 	}
 }
