@@ -1,7 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
+﻿using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -19,35 +16,28 @@ public class PlayerMovement : MonoBehaviour
 	public KeyCode jump = KeyCode.Space;
 
 	Rigidbody2D rb;
+	Animator animator;
 
-	float currentSpeed;
+	float currentSpeed = 0;
 	bool canJump = false;
 
 	void Start()
 	{
 		rb = GetComponent<Rigidbody2D>();
+		animator = GetComponent<Animator>();
 	}
 
 	void Update()
 	{
-		if (Input.GetKeyDown(left))
-			ChangeSpeed(acceleration * Time.deltaTime * -1f);
-		if (Input.GetKeyDown(right))
-			ChangeSpeed(acceleration * Time.deltaTime);
+		currentSpeed = Input.GetAxis("Horizontal") * maxSpeed;
 
 		if (Input.GetKeyDown(jump) && canJump)
-			Jump();
+			animator.SetTrigger("Jump");
 
 		canJump = Physics2D.OverlapCircle(groundCheckTransform.position, groundCheckTransform.localScale.y, LayerMask.GetMask("Enviroment")) != null;
 	}
 
-	void ChangeSpeed(float amount)
-	{
-		currentSpeed += amount;
-		currentSpeed = Mathf.Clamp(currentSpeed, -maxSpeed, maxSpeed);
-	}
-
-	void Jump()
+	public void Jump()
 	{
 		rb.AddForce(new Vector2(0f, jumpForce), ForceMode2D.Impulse);
 
@@ -58,6 +48,5 @@ public class PlayerMovement : MonoBehaviour
 	{
 		if (currentSpeed != 0)
 			rb.velocity = new Vector2(currentSpeed, rb.velocity.y);
-		currentSpeed = 0;
 	}
 }
