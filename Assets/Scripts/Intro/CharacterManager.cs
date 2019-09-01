@@ -11,6 +11,13 @@ public class CharacterManager : MonoBehaviour
     public GameObject legs;
     public Skins skins;
     
+    void Start()
+    {
+        head.GetComponent<MeshRenderer>().material = skins.head[skins.headID];
+        legs.GetComponent<MeshRenderer>().material = skins.body[skins.bodyID];
+        body.GetComponent<MeshRenderer>().material = skins.legs[skins.legsID];
+    }
+    
     public void ChangeHead(bool isRight)
     {
         if (isRight)
@@ -19,6 +26,7 @@ public class CharacterManager : MonoBehaviour
             {
                 skins.headID++;
                 head.GetComponent<MeshRenderer>().material = skins.head[skins.headID];
+                if (skins.headID == skins.head.Count - 1) skins.headID = 0;
             }
         }
         else
@@ -27,6 +35,7 @@ public class CharacterManager : MonoBehaviour
             {
                 skins.headID--;
                 head.GetComponent<MeshRenderer>().material = skins.head[skins.headID];
+                if (skins.headID == 0) skins.headID =  skins.head.Count - 1;
             }
         }
         Debug.Log("HeadID: " + skins.headID);
@@ -40,6 +49,7 @@ public class CharacterManager : MonoBehaviour
             {
                 skins.bodyID++;
                 body.GetComponent<MeshRenderer>().material = skins.body[skins.bodyID];
+                if (skins.bodyID == skins.body.Count - 1) skins.bodyID = 0;
             }
         }
         else
@@ -48,6 +58,7 @@ public class CharacterManager : MonoBehaviour
             {
                 skins.bodyID--;
                 body.GetComponent<MeshRenderer>().material = skins.body[skins.bodyID];
+                if (skins.bodyID == 0) skins.bodyID = skins.body.Count - 1;
             }
         }
         Debug.Log("BodyID: " + skins.bodyID);
@@ -61,6 +72,7 @@ public class CharacterManager : MonoBehaviour
             {
                 skins.legsID++;
                 legs.GetComponent<MeshRenderer>().material = skins.legs[skins.legsID];
+                if (skins.legsID == skins.legs.Count - 1) skins.legsID = 0;
             }
         }
         else
@@ -69,6 +81,7 @@ public class CharacterManager : MonoBehaviour
             {
                 skins.legsID--;
                 legs.GetComponent<MeshRenderer>().material = skins.legs[skins.legsID];
+                if (skins.legsID == skins.legs.Count - 1) skins.legsID = 0;
             }
         }
         Debug.Log("LegsID: " + skins.legsID);
