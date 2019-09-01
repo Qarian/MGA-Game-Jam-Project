@@ -9,6 +9,8 @@ public class PressurePoint : MonoBehaviour
 	Sprite clickedSprite = default;
 	Sprite normalSprite;
 
+	[SerializeField]
+	bool stayClicked = false;
 	public UnityEvent activatedButton;
 	public UnityEvent deactivatedButton;
 
@@ -29,6 +31,9 @@ public class PressurePoint : MonoBehaviour
 
 	private void OnTriggerExit2D(Collider2D collision)
 	{
+		if (stayClicked)
+			return;
+
 		spriteRenderer.sprite = normalSprite;
 		deactivatedButton.Invoke();
 	}
