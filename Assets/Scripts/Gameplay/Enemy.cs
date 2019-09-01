@@ -58,11 +58,6 @@ public class Enemy : MonoBehaviour
 		}
 	}
 
-	private void OnBecameInvisible()
-	{
-		Destroy(transform.parent.gameObject);
-	}
-
 	private void OnTriggerEnter2D(Collider2D collision)
 	{
 		if (collision.tag == "Player")
