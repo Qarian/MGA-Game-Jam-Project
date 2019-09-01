@@ -22,20 +22,22 @@ public class CharacterManager : MonoBehaviour
     {
         if (isRight)
         {
-            if (skins.headID < skins.head.Count - 1)
+            if (skins.headID <= skins.head.Count - 1)
             {
                 skins.headID++;
+                if (skins.headID == skins.head.Count) skins.headID = 0;
                 head.GetComponent<MeshRenderer>().material = skins.head[skins.headID];
-                if (skins.headID == skins.head.Count - 1) skins.headID = 0;
+                
             }
         }
         else
         {
-            if (skins.headID > 0)
+            if (skins.headID >= 0)
             {
                 skins.headID--;
+                if (skins.headID == -1) skins.headID =  skins.head.Count - 1;
                 head.GetComponent<MeshRenderer>().material = skins.head[skins.headID];
-                if (skins.headID == 0) skins.headID =  skins.head.Count - 1;
+                
             }
         }
         Debug.Log("HeadID: " + skins.headID);
@@ -45,20 +47,22 @@ public class CharacterManager : MonoBehaviour
     {
         if (isRight)
         {
-            if (skins.bodyID < skins.body.Count - 1)
+            if (skins.bodyID <= skins.body.Count - 1)
             {
                 skins.bodyID++;
+                if (skins.bodyID == skins.body.Count ) skins.bodyID = 0;
                 body.GetComponent<MeshRenderer>().material = skins.body[skins.bodyID];
-                if (skins.bodyID == skins.body.Count - 1) skins.bodyID = 0;
+                
             }
         }
         else
         {
-            if (skins.bodyID > 0)
+            if (skins.bodyID >= 0)
             {
                 skins.bodyID--;
+                if (skins.bodyID == -1) skins.bodyID = skins.body.Count - 1;
                 body.GetComponent<MeshRenderer>().material = skins.body[skins.bodyID];
-                if (skins.bodyID == 0) skins.bodyID = skins.body.Count - 1;
+                
             }
         }
         Debug.Log("BodyID: " + skins.bodyID);
@@ -68,31 +72,26 @@ public class CharacterManager : MonoBehaviour
     {
         if (isRight)
         {
-            if (skins.legsID < skins.legs.Count - 1)
+            if (skins.legsID <= skins.legs.Count - 1)
             {
                 skins.legsID++;
+                if (skins.legsID == skins.legs.Count) skins.legsID = 0;
                 legs.GetComponent<MeshRenderer>().material = skins.legs[skins.legsID];
-                if (skins.legsID == skins.legs.Count - 1) skins.legsID = 0;
+              
             }
         }
         else
         {
-            if (skins.legsID > 0)
+            if (skins.legsID >= 0)
             {
                 skins.legsID--;
+                if (skins.legsID == -1) skins.legsID = skins.legs.Count - 1;
                 legs.GetComponent<MeshRenderer>().material = skins.legs[skins.legsID];
-                if (skins.legsID == skins.legs.Count - 1) skins.legsID = 0;
             }
         }
         Debug.Log("LegsID: " + skins.legsID);
     }
-
-    public void ChangeSkinColor(bool isRight)
-    {
-        
-        
-        
-    }
+    
     
     
 }

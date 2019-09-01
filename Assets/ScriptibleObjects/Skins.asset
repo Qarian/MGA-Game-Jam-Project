@@ -13,10 +13,11 @@ MonoBehaviour:
   m_Name: Skins
   m_EditorClassIdentifier: 
   head:
-  - {fileID: 2100000, guid: 9f0412ab9679e0142ab0f32818f50410, type: 2}
-  - {fileID: 2100000, guid: ee5519e6a394c444282afbede3c3f3dc, type: 2}
-  - {fileID: 2100000, guid: bda1e25b12409a34ca5c1a9c9eb1d3e8, type: 2}
-  - {fileID: 2100000, guid: 74b6ca49204b18049bc9529c828c885c, type: 2}
+  - {fileID: 2100000, guid: 177a2282365ab4c458493687a3a6a4f3, type: 2}
+  - {fileID: 2100000, guid: a6c6ce23cb41b1045962ef7735aa589e, type: 2}
+  - {fileID: 2100000, guid: 1f84bcd5caf04cf4aa655a873b2f5fc1, type: 2}
+  - {fileID: 2100000, guid: a851d246b43046d41bc104f7236af2e1, type: 2}
+  - {fileID: 2100000, guid: 662f6dbaf9ed1d147a2df29270a984a3, type: 2}
   body:
   - {fileID: 2100000, guid: 9f0412ab9679e0142ab0f32818f50410, type: 2}
   - {fileID: 2100000, guid: ee5519e6a394c444282afbede3c3f3dc, type: 2}
@@ -27,6 +28,6 @@ MonoBehaviour:
   - {fileID: 2100000, guid: ee5519e6a394c444282afbede3c3f3dc, type: 2}
   - {fileID: 2100000, guid: bda1e25b12409a34ca5c1a9c9eb1d3e8, type: 2}
   - {fileID: 2100000, guid: 74b6ca49204b18049bc9529c828c885c, type: 2}
-  headID: 0
-  bodyID: 0
-  legsID: 0
+  headID: 1
+  bodyID: 1
+  legsID: 1
