@@ -18,14 +18,20 @@ public class Enemy : MonoBehaviour
 
 	[SerializeField]
 	Rigidbody2D rb = default;
+	SpriteRenderer spriteRenderer;
 
 	void Start()
 	{
+		spriteRenderer = GetComponent<SpriteRenderer>();
+
 		currentChecktransform = checkTransforms[(int)movementDir];
 		if (movementDir == Direction.Right)
 			rb.velocity = new Vector2(speed, rb.velocity.y);
 		else if (movementDir == Direction.Left)
+		{
 			rb.velocity = new Vector2(-speed, rb.velocity.y);
+			spriteRenderer.flipX = true;
+		}
 	}
 
 	void FixedUpdate()
@@ -38,16 +44,23 @@ public class Enemy : MonoBehaviour
 	{
 		if (movementDir == Direction.Right)
 		{
+			spriteRenderer.flipX = true;
 			movementDir = Direction.Left;
 			rb.velocity = new Vector2(-speed, rb.velocity.y);
 			currentChecktransform = checkTransforms[(int)movementDir];
 		}
 		else if (movementDir == Direction.Left)
 		{
+			spriteRenderer.flipX = false;
 			movementDir = Direction.Right;
 			rb.velocity = new Vector2(speed, rb.velocity.y);
 			currentChecktransform = checkTransforms[(int)movementDir];
 		}
+	}
+
+	private void OnBecameInvisible()
+	{
+		Destroy(transform.parent.gameObject);
 	}
 
 	private void OnTriggerEnter2D(Collider2D collision)
