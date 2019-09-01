@@ -18,7 +18,7 @@ public class CharacterManager : MonoBehaviour
             if (skins.headID < skins.head.Count - 1)
             {
                 skins.headID++;
-                head.GetComponent<RawImage>().texture = skins.head[skins.headID].texture;
+                head.GetComponent<MeshRenderer>().material = skins.head[skins.headID];
             }
         }
         else
@@ -26,7 +26,7 @@ public class CharacterManager : MonoBehaviour
             if (skins.headID > 0)
             {
                 skins.headID--;
-                head.GetComponent<RawImage>().texture = skins.head[skins.headID].texture;
+                head.GetComponent<MeshRenderer>().material = skins.head[skins.headID];
             }
         }
         Debug.Log("HeadID: " + skins.headID);
@@ -39,7 +39,7 @@ public class CharacterManager : MonoBehaviour
             if (skins.bodyID < skins.body.Count - 1)
             {
                 skins.bodyID++;
-                body.GetComponent<RawImage>().texture = skins.body[skins.bodyID].texture;
+                body.GetComponent<MeshRenderer>().material = skins.body[skins.bodyID];
             }
         }
         else
@@ -47,7 +47,7 @@ public class CharacterManager : MonoBehaviour
             if (skins.bodyID > 0)
             {
                 skins.bodyID--;
-                body.GetComponent<RawImage>().texture = skins.body[skins.bodyID].texture;
+                body.GetComponent<MeshRenderer>().material = skins.body[skins.bodyID];
             }
         }
         Debug.Log("BodyID: " + skins.bodyID);
@@ -60,7 +60,7 @@ public class CharacterManager : MonoBehaviour
             if (skins.legsID < skins.legs.Count - 1)
             {
                 skins.legsID++;
-                legs.GetComponent<RawImage>().texture = skins.legs[skins.legsID].texture;
+                legs.GetComponent<MeshRenderer>().material = skins.legs[skins.legsID];
             }
         }
         else
@@ -68,7 +68,7 @@ public class CharacterManager : MonoBehaviour
             if (skins.legsID > 0)
             {
                 skins.legsID--;
-                legs.GetComponent<RawImage>().texture = skins.legs[skins.legsID].texture;
+                legs.GetComponent<MeshRenderer>().material = skins.legs[skins.legsID];
             }
         }
         Debug.Log("LegsID: " + skins.legsID);

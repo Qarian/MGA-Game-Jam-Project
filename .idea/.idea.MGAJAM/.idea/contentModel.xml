@@ -6,6 +6,8 @@
     <e p="D:\MGAJAM" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="Mancontroller.cs" t="Include" />
+        <e p="MoveLeftUIAnimationController.cs" t="Include" />
         <e p="Scripts" t="Include">
           <e p="ArrowControler.cs" t="Include" />
           <e p="CharacterCreatorController.cs" t="Include" />

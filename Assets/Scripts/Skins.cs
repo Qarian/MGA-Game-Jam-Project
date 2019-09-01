@@ -6,9 +6,9 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "Skins", menuName = "Skins", order = 1)]
 public class Skins : ScriptableObject
 {
-    public List<Sprite> head;
-    public List<Sprite> body;
-    public List<Sprite> legs;
+    public List<Material> head;
+    public List<Material> body;
+    public List<Material> legs;
 
     public int headID = 0;
     public int bodyID = 0;
