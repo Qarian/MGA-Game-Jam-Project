@@ -6,10 +6,11 @@ public class PlayerMovement : MonoBehaviour
 	Transform groundCheckTransform = default;
 	[SerializeField]
 	GameObject gameOverCanvas = default;
+	[SerializeField]
+	AudioSource jumpSound = default;
 
 	[Space]
 	public float maxSpeed;
-	public float acceleration;
 	public float jumpForce;
 	[SerializeField]
 	float deathJumpSpeed = default;
@@ -21,6 +22,7 @@ public class PlayerMovement : MonoBehaviour
 
 	Rigidbody2D rb;
 	Animator animator;
+	AudioSource movingSound;
 
 	float currentSpeed = 0;
 	bool canJump = false;
@@ -29,11 +31,14 @@ public class PlayerMovement : MonoBehaviour
 	{
 		rb = GetComponent<Rigidbody2D>();
 		animator = GetComponent<Animator>();
+		movingSound = GetComponent<AudioSource>();
+		movingSound.volume = 0;
 	}
 
 	void Update()
 	{
 		currentSpeed = Input.GetAxis("Horizontal") * maxSpeed;
+		movingSound.volume = Mathf.Abs(Input.GetAxis("Horizontal")) * 0.5f;
 
 		if (Input.GetKeyDown(jump) && canJump)
 			animator.SetTrigger("Jump");
@@ -62,5 +67,10 @@ public class PlayerMovement : MonoBehaviour
 		rb.velocity = new Vector2(0, deathJumpSpeed);
 		Instantiate(gameOverCanvas);
 		Destroy(this);
+	}
+
+	public void JumpSound()
+	{
+		jumpSound.Play();
 	}
 }

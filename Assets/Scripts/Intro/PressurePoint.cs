@@ -15,9 +15,11 @@ public class PressurePoint : MonoBehaviour
 	public UnityEvent deactivatedButton;
 
 	SpriteRenderer spriteRenderer;
+	AudioSource audioSource;
 
 	private void Start()
 	{
+		audioSource = GetComponent<AudioSource>();
 		spriteRenderer = GetComponent<SpriteRenderer>();
 
 		normalSprite = spriteRenderer.sprite;
@@ -27,6 +29,9 @@ public class PressurePoint : MonoBehaviour
 	{
 		spriteRenderer.sprite = clickedSprite;
 		activatedButton.Invoke();
+
+		audioSource.pitch = 0.5f;
+		audioSource.Play();
 	}
 
 	private void OnTriggerExit2D(Collider2D collision)
@@ -36,5 +41,8 @@ public class PressurePoint : MonoBehaviour
 
 		spriteRenderer.sprite = normalSprite;
 		deactivatedButton.Invoke();
+
+		audioSource.pitch = 1.5f;
+		audioSource.Play();
 	}
 }
