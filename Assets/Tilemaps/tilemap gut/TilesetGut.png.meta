@@ -1,58 +1,82 @@
 fileFormatVersion: 2
-guid: 79098d66947e61b45bf04725bffe4567
+guid: ed30a53d672bc024ba9ce26018383b7d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7739348915056731754
-    second: Untitled - 1_0
+      213: 5612833181132480542
+    second: TilesetGut_0
   - first:
-      213: 8207021679229026302
-    second: Untitled - 1_1
+      213: -8671165004268613762
+    second: TilesetGut_1
   - first:
-      213: -4654266692533188454
-    second: Untitled - 1_2
+      213: 8174373085970057219
+    second: TilesetGut_2
   - first:
-      213: 5270041795522420071
-    second: Untitled - 1_3
+      213: 392054887887567140
+    second: TilesetGut_3
   - first:
-      213: -2853219648494101960
-    second: Untitled - 1_4
+      213: 6492740139372554197
+    second: TilesetGut_4
   - first:
-      213: 7420589217848293659
-    second: Untitled - 1_5
+      213: -3307733646618909517
+    second: TilesetGut_5
   - first:
-      213: 2980986484202899563
-    second: Untitled - 1_6
+      213: 1813971684302592779
+    second: TilesetGut_6
   - first:
-      213: 5372592458411551998
-    second: Untitled - 1_7
+      213: -8143210670273554745
+    second: TilesetGut_7
   - first:
-      213: 7502146413014234609
-    second: Untitled - 1_8
+      213: 5782187210801035998
+    second: TilesetGut_8
   - first:
-      213: 8794330786121514834
-    second: Untitled - 1_9
+      213: 6612759986957551509
+    second: TilesetGut_9
   - first:
-      213: 4385203894300867948
-    second: Untitled - 1_10
+      213: 1309265905287850499
+    second: TilesetGut_10
   - first:
-      213: 718788999279989434
-    second: Untitled - 1_11
+      213: 1561173470593067036
+    second: TilesetGut_11
   - first:
-      213: -7853790385966711496
-    second: Untitled - 1_12
+      213: -2383433017234078018
+    second: TilesetGut_12
   - first:
-      213: 2978534373793167515
-    second: Untitled - 1_13
+      213: -4763724522070598314
+    second: TilesetGut_13
   - first:
-      213: -5236598025641892238
-    second: Untitled - 1_14
+      213: 8569334901520716967
+    second: TilesetGut_14
   - first:
-      213: -170528779196785925
-    second: Untitled - 1_15
+      213: 5269264980953321876
+    second: TilesetGut_15
   - first:
-      213: 4786589203656047699
-    second: Untitled - 1_16
+      213: 2013942580252287800
+    second: TilesetGut_16
+  - first:
+      213: -3153060742374413054
+    second: TilesetGut_17
+  - first:
+      213: 1442962977572701119
+    second: TilesetGut_18
+  - first:
+      213: -7138964165060517313
+    second: TilesetGut_19
+  - first:
+      213: 382077687647088869
+    second: TilesetGut_20
+  - first:
+      213: 8559976460537527511
+    second: TilesetGut_21
+  - first:
+      213: -7909775528298603799
+    second: TilesetGut_22
+  - first:
+      213: 559613302091638986
+    second: TilesetGut_23
+  - first:
+      213: -6877171649979629418
+    second: TilesetGut_24
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -96,7 +120,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 10
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -133,23 +157,95 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Untitled - 1_0
+      name: TilesetGut_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12af472084ad83b4c9084afcc06b66e0
+      internalID: 5612833181132480542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesetGut_1
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 485a04b026e8a1e4290251dfa4fdd32e
+      internalID: -8671165004268613762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesetGut_2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a34cd22bbe01e5a4f8a499df49b458a6
+      internalID: 8174373085970057219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesetGut_3
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40290a577262f2e46ac9a08b7d80b768
+      internalID: 392054887887567140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesetGut_4
       rect:
         serializedVersion: 2
         x: 0
@@ -163,14 +259,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fa265dd9db47f3a4696f41335ca9fe55
-      internalID: 7739348915056731754
+      spriteID: 9b20107e156d1f84ca4b85678fab3939
+      internalID: 6492740139372554197
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Untitled - 1_1
+      name: TilesetGut_5
       rect:
         serializedVersion: 2
         x: 16
@@ -184,14 +280,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 13c9672e52d390d4c8d268b0091a62b0
-      internalID: 8207021679229026302
+      spriteID: 6e6f9ca60aaafab488955449379c5624
+      internalID: -3307733646618909517
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Untitled - 1_2
+      name: TilesetGut_6
       rect:
         serializedVersion: 2
         x: 32
@@ -205,17 +301,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9dcd078ca48f2844fa4be9b32bd0942c
-      internalID: -4654266692533188454
+      spriteID: 81dcf781c8bcf7f41bb76eaa187383d1
+      internalID: 1813971684302592779
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Untitled - 1_3
+      name: TilesetGut_7
       rect:
         serializedVersion: 2
-        x: 48
+        x: 80
         y: 64
         width: 16
         height: 16
@@ -226,18 +322,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3e64f904987d86945ab6145ccf42b893
-      internalID: 5270041795522420071
+      spriteID: 2d771a5a31d6b804e86c85a5aeb61d16
+      internalID: -8143210670273554745
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Untitled - 1_4
+      name: TilesetGut_8
       rect:
         serializedVersion: 2
-        x: 0
-        y: 48
+        x: 96
+        y: 64
         width: 16
         height: 16
       alignment: 0
@@ -247,77 +343,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c9579d5578641fa48affc5799302227e
-      internalID: -2853219648494101960
+      spriteID: 1d81d83985acf8d43821f6970ca7ba4d
+      internalID: 5782187210801035998
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Untitled - 1_5
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 48
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 14d50f94a9100cb4982e68998e6a6f86
-      internalID: 7420589217848293659
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Untitled - 1_6
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 48
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a701c81a7f15ee7488072bb06a5e684c
-      internalID: 2980986484202899563
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Untitled - 1_7
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 48
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 89eda3d5056f05146859f4514a72ca5e
-      internalID: 5372592458411551998
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Untitled - 1_8
+      name: TilesetGut_9
       rect:
         serializedVersion: 2
         x: 0
@@ -331,14 +364,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6e988de7c784e314ca14d2e9051c4aaa
-      internalID: 7502146413014234609
+      spriteID: 39cdc1906d85b404495afddbb53addfa
+      internalID: 6612759986957551509
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Untitled - 1_9
+      name: TilesetGut_10
       rect:
         serializedVersion: 2
         x: 16
@@ -352,14 +385,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dea96737d03142642bb35f57e4034cd9
-      internalID: 8794330786121514834
+      spriteID: 7ee1c421ce0cfbb4fbefba524f04be91
+      internalID: 1309265905287850499
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Untitled - 1_10
+      name: TilesetGut_11
       rect:
         serializedVersion: 2
         x: 32
@@ -373,14 +406,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 12fe6424975c1cc44a8a8be9b94337d5
-      internalID: 4385203894300867948
+      spriteID: d82209c93bc0e8b4e9b2445b78d8c1ba
+      internalID: 1561173470593067036
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Untitled - 1_11
+      name: TilesetGut_12
       rect:
         serializedVersion: 2
         x: 48
@@ -394,14 +427,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 245e580402c52ad45b0bb8bc0e3b30ce
-      internalID: 718788999279989434
+      spriteID: 8c1dfa6da0a080e458a628892df7d10f
+      internalID: -2383433017234078018
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Untitled - 1_12
+      name: TilesetGut_13
       rect:
         serializedVersion: 2
         x: 64
@@ -415,14 +448,56 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b844487b08e339e42bf2faa7343ca29d
-      internalID: -7853790385966711496
+      spriteID: e43d27e3b6160ee47a87c359b14066d1
+      internalID: -4763724522070598314
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Untitled - 1_13
+      name: TilesetGut_14
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c0c810c53f79d44484d3c2c727215cf
+      internalID: 8569334901520716967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesetGut_15
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7688c79c2e3000042aafedeca0f2c6c2
+      internalID: 5269264980953321876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesetGut_16
       rect:
         serializedVersion: 2
         x: 0
@@ -436,14 +511,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4eb333070a8f7c5428dfcf1c6546583b
-      internalID: 2978534373793167515
+      spriteID: 014bd6f5652e77d478028cab75a66978
+      internalID: 2013942580252287800
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Untitled - 1_14
+      name: TilesetGut_17
       rect:
         serializedVersion: 2
         x: 16
@@ -457,14 +532,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c206a75bcfe4b2143815c4eac4bfaa2c
-      internalID: -5236598025641892238
+      spriteID: 12745d8265d46354b8f3e96a3160041c
+      internalID: -3153060742374413054
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Untitled - 1_15
+      name: TilesetGut_18
       rect:
         serializedVersion: 2
         x: 32
@@ -478,14 +553,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 03414d11555852a4da2b6fffb708805e
-      internalID: -170528779196785925
+      spriteID: 63286b7d1cd080f418692bb6064e8998
+      internalID: 1442962977572701119
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Untitled - 1_16
+      name: TilesetGut_19
       rect:
         serializedVersion: 2
         x: 48
@@ -499,8 +574,113 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 174bc878c1c7317458d27dbc8e8f29f3
-      internalID: 4786589203656047699
+      spriteID: 0e085aca12d32d84a8278877b6ca3993
+      internalID: -7138964165060517313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesetGut_20
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4657058dea5fdc4fae107d9ecc75fa1
+      internalID: 382077687647088869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesetGut_21
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ead0628f4abd1943a3e2c4376a826b5
+      internalID: 8559976460537527511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesetGut_22
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90d731395668a7f4eb55d3e9d89b3355
+      internalID: -7909775528298603799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesetGut_23
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f56925a71a556ab479604fc78e618c6e
+      internalID: 559613302091638986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesetGut_24
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5eb23ae2a5244af43bdc21aa85a88111
+      internalID: -6877171649979629418
       vertices: []
       indices: 
       edges: []
