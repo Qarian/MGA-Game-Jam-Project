@@ -187,10 +187,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1506371300, guid: f1b7b5266f172f64abbb84469d37f72a, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f1b7b5266f172f64abbb84469d37f72a, type: 3}
 --- !u!1 &591608867
@@ -276,12 +272,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &660366922 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5878808289187452326, guid: f1b7b5266f172f64abbb84469d37f72a,
-    type: 3}
-  m_PrefabInstance: {fileID: 265738414}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1128981437
 GameObject:
   m_ObjectHideFlags: 0
@@ -373,37 +363,3 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
---- !u!1 &1266907394 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4969242310943344644, guid: f1b7b5266f172f64abbb84469d37f72a,
-    type: 3}
-  m_PrefabInstance: {fileID: 265738414}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1527396855 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1544237527935157044, guid: f1b7b5266f172f64abbb84469d37f72a,
-    type: 3}
-  m_PrefabInstance: {fileID: 265738414}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1527396856
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1527396855}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 02d148952587dbb4e9b01164b3e69550, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  skins: {fileID: 11400000, guid: c2b332efc1f9f1a4ab4d1c400925d18e, type: 2}
-  head: {fileID: 660366922}
-  spodnie: {fileID: 1266907394}
-  buty: {fileID: 2013647114}
---- !u!1 &2013647114 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7570480138222960883, guid: f1b7b5266f172f64abbb84469d37f72a,
-    type: 3}
-  m_PrefabInstance: {fileID: 265738414}
-  m_PrefabAsset: {fileID: 0}
