@@ -7,6 +7,7 @@
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="ButtonsAudio.cs" t="Include" />
+        <e p="EndGame.cs" t="Include" />
         <e p="Mech" t="Include">
           <e p="IMPORTANT.txt" t="Include" />
           <e p="Scripts" t="Include">

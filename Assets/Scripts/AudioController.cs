@@ -5,9 +5,17 @@ using UnityEngine.SceneManagement;
 
 public class AudioController : MonoBehaviour
 {
-    void Start()
+	public static AudioController singleton;
+
+	void Start()
     {
+	    if (singleton != null)
+	    {
+		    Destroy(gameObject);
+		    return;
+	    }
 		DontDestroyOnLoad(gameObject);
+		singleton = this;
     }
 
 	private void Update()
@@ -15,5 +23,8 @@ public class AudioController : MonoBehaviour
 		if (SceneManager.GetActiveScene().buildIndex == 2)
 			if (Input.GetKeyDown(KeyCode.R))
 				SceneManager.LoadScene(2);
+		
+		if (Input.GetKeyDown(KeyCode.P))
+			SceneManager.LoadScene(0);
 	}
 }

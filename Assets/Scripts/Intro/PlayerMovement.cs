@@ -66,6 +66,7 @@ public class PlayerMovement : MonoBehaviour
 		colliders[0].enabled = false;
 		rb.velocity = new Vector2(0, deathJumpSpeed);
 		Instantiate(gameOverCanvas);
+		movingSound.volume = 0;
 		Destroy(this);
 	}
 
